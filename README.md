@@ -14,6 +14,10 @@ Deploy
 ---
 To deploy war file you will need any servlet 3.0 container (for example Tomcat7).
 
+Usage
+---
+After deployment you can create views and scripts in the root directory of the application. You don't need to restart the container after each changes (view or script). All changes are immediately available.
+
 Script
 ---
 
