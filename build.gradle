@@ -1,0 +1,22 @@
+apply plugin: 'idea'
+apply plugin: 'groovy'
+apply plugin: 'war'
+
+buildDir = 'target'
+
+sourceCompatibility = '1.7'
+targetCompatibility = '1.7'
+
+version = '0.1-SNAPSHOT'
+
+ext.groovyVersion = '2.1.6'
+ext.servletVersion = '3.0.1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:${groovyVersion}"
+    providedCompile "javax.servlet:javax.servlet-api:${servletVersion}"
+}
